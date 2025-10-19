@@ -2,13 +2,11 @@
 
 def solve():
 # Ниже пишите решение задачи
-    a=input()
-    b=input()
-    c=input()
-    print("код символа", a, "равен", ord(a),"\n",
-    "код символа", b, "равен", ord(b),"\n",
-    "код символа", c, "равен", ord(c))
-   
+    a,b,c=map(str, input().split())
+    ord1=ord(a)
+    ord2=ord(b)
+    ord3=ord(c)
+    print("Код символа " + str(a) + " равен " + str(ord1) + '\n' + "Код символа " + str(b) + " равен " + str(ord2) + '\n'+ "Код символа " + str(c) + " равен " + str(ord3))
 # Код ниже не трогать! он нужен для тестов
 if __name__ == "__main__":
     solve()
